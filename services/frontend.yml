@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  frontend:
+    image: 996995275645.dkr.ecr.eu-central-1.amazonaws.com/edexa-universe:edexa-explorer-v3-may6.5
+    platform: linux/amd64
+    restart: always
+    container_name: 'frontend'
+    env_file:
+      -  ../envs/common-frontend.env
